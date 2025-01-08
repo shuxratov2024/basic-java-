@@ -19,12 +19,12 @@ public class Bankamat {
             if (amal==3){
                 System.out.println("Nomeringizni kiriting  qoshib yozing");
               int nomer = scanner.nextInt();
-
+              
                 System.out.println(nomer+ " sizning nomeringiz");
             }
             if (amal==2){
                 System.out.println("[+] 1-100 ming");
-                System.out.println("[+] 2-150 ming ");  
+                System.out.println("[+] 2-150 ming ");
                 System.out.println("[+] 3-350 ming");
                 int amal_summa = scanner.nextInt();
                 if (amal_summa==1){

@@ -10,13 +10,21 @@ public class Bankamat {
             System.out.println("[+] Amalni bajaring");
             System.out.println("[+] 1- balansini teshkirish");
             System.out.println("[+] 2 - Naqd pul olish");
+            System.out.println("[+] 3 - Nomer kiritish");
+
             int amal = scanner.nextInt();
             if (amal==1){
                 System.out.println(balans+"Som bor");
+            };
+            if (amal==3){
+                System.out.println("Nomeringizni kiriting  qoshib yozing");
+              int nomer = scanner.nextInt();
+
+                System.out.println(nomer+ " sizning nomeringiz");
             }
             if (amal==2){
                 System.out.println("[+] 1-100 ming");
-                System.out.println("[+] 2-150 ming ");
+                System.out.println("[+] 2-150 ming ");  
                 System.out.println("[+] 3-350 ming");
                 int amal_summa = scanner.nextInt();
                 if (amal_summa==1){
@@ -42,6 +50,7 @@ public class Bankamat {
                 if (oxirigi_summa>balans){
                     System.out.println("[-] mablangiz yetarli emas");
                 }
+
                 else {
                     System.out.println(summa+ "Pulni oling");
                     System.out.println(balans-oxirigi_summa+"som qoldi");
